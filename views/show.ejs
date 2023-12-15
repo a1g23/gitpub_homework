@@ -16,7 +16,30 @@
         <h1>At foo bar</h1>
         <h2><%=specificDrink.name%></h2>
         <img src="<%=specificDrink.image + '.png'%>">
-        <h3><%=specificDrink.price%></h3>
+        <h3>Price $<%=specificDrink.price%></h3>
         <a href="/drinks">back</a>
 </body>
+
+<style>
+    h1 {
+        text-align: center;
+        color: brown
+    }
+
+    h2 {
+        text-align: center;
+        color: brown;
+    }
+
+    h3 {
+        text-align: center;
+        opacity: .5;
+    }
+
+    body {
+        background-color: burlywood;
+    }
+
+</style>
+
 </html>
