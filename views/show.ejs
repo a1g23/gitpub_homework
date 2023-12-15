@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Change all your html code inside your show.ejs file's <body> so that:
+        Your h1 tag says "At foo bar"
+        There's an h2 tag that should display the name of the drink
+        There's an image tag that should display the image of the drink
+        There's an h3 tag that should display the price of the drink
+        Add an anchor tag with the text of back, that will take you back to your index.ejs view -->
+
+        <h1>At foo bar</h1>
+        <h2><%=specificDrink.name%></h2>
+        <img src="<%=specificDrink.image%>">
+        <h3><%=specificDrink.price%></h3>
+        <a href="/drinks">back</a>
+</body>
+</html>
