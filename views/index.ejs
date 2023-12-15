@@ -7,6 +7,26 @@
 </head>
 <body>
     <h1>Welcome to the GitPub</h1>
+
+    <!-- adding a loop to get all the drink names in an ul -->
+
+    <ul>
+        <% for (let el of drinks) { %>
+            
+                
+                <% function capitalizeFirstLetter(string) { %>
+                <%    return string.charAt(0).toUpperCase() + string.slice(1) %>
+                <%  } %>
+                <%  const theDrinkName = el.name %>
+                <%  const correctDrinkName = capitalizeFirstLetter(theDrinkName); %>
+                <li><%=`${correctDrinkName}`%></li>
+            
+        <%}  %>
+    </ul>
+
+
+
+
 </body>
 
 <style>
