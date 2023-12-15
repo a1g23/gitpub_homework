@@ -4,7 +4,11 @@ const app = express()
 
 
 
+// route INDEX
 
+app.get("/", (req, res) => {
+    res.send('Welcome to the Gitpub App!')
+})
 
 
 
