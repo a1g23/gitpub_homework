@@ -2,7 +2,7 @@ const express = require("express")
 
 const app = express()
 
-
+const drinks = require("./models/drinks")
 
 // route INDEX
 
@@ -11,7 +11,11 @@ app.get("/", (req, res) => {
 })
 
 
+// route Drinks JSON
 
+app.get("/drinks", (req, res) => {
+    res.send(drinks)
+})
 
 
 
