@@ -18,7 +18,11 @@ app.get("/drinks", (req, res) => {
 })
 
 
+// route to SHOW
 
+app.get("/drinks/:id", (req, res) => {
+    res.send(req.params.id)
+})
 
 
 
